@@ -129,18 +129,20 @@ Specify the color and value in the [`colorMapping`] property. Here '#D84444' is 
 
 ```html
 
-@using Syncfusion.EJ2;
-var shape = new
-{
-    colorValuePath = "Candidate",
-    colorMapping = new[] {
-        new { value = "Trump", color = "#D84444" },
-        new { value = "Clinton", color = "#316DB5" }
-    }
-};
+@using Syncfusion.EJ2.Maps;
+
+@{
+    var propertyPath = new[] { "name" };
+    var colormapping = new List<Syncfusion.EJ2.Maps.MapsColorMapping> {
+        new  MapsColorMapping{ Color = "#EDB46F",Value= "Permanent"  },
+        new MapsColorMapping { Color= "#F1931B", Value = "Non-Permanent" }
+    };
+}
+
 <ejs-maps id="maps">
     <e-maps-layers>
-        <e-maps-layer shapeSettings="shape" dataSource="ViewBag.electiondata" shapeData="ViewBag.usmap" shapeDataPath="State" shapePropertyPath="name">
+        <e-maps-layer dataSource="ViewBag.electiondata" shapeData="ViewBag.worldmap" shapeDataPath="Country" shapePropertyPath="propertyPath">
+            <e-layersettings-shapesettings colorValuePath="Membership" fill="#E5E5E5" colorMapping="colormapping"></e-layersettings-shapesettings>
         </e-maps-layer>
     </e-maps-layers>
 </ejs-maps>
@@ -153,19 +155,19 @@ You can add a title using the [`titleSettings`] property to the map to provide i
 
 ```html
 
-@using Syncfusion.EJ2;
-var shape = new
-{
-    colorValuePath = "Candidate",
-    colorMapping = new[] {
-        new { value = "Trump", color = "#D84444" },
-        new { value = "Clinton", color = "#316DB5" }
-    }
-};
+@{
+    var titleStyle = new MapsFont
+    {
+        Size = "10px",
+        Color = "red",
+        FontFamily = "Sans-serif "
+    };
+}
+
 <ejs-maps id="maps">
-    <e-maps-titlesettings text="USA Election Results - 2016" textStyle="titleStyle"></e-maps-titlesettings>
+    <e-maps-titlesettings text="Maps component" textStyle="titleStyle"></e-maps-titlesettings>
     <e-maps-layers>
-        <e-maps-layer shapeSettings="shape" dataSource="ViewBag.electiondata" shapeData="ViewBag.usmap" shapeDataPath="State" shapePropertyPath="name">
+        <e-maps-layer shapeData="ViewBag.usmap">
         </e-maps-layer>
     </e-maps-layers>
 </ejs-maps>
@@ -179,23 +181,25 @@ property to true in [`legendSettings`] object.
 
 ```html
 
-@using Syncfusion.EJ2;
-var shape = new
-{
-    colorValuePath = "Candidate",
-    colorMapping = new[] {
-        new { value = "Trump", color = "#D84444" },
-        new { value = "Clinton", color = "#316DB5" }
-    }
-};
+@using Syncfusion.EJ2.Maps;
+
+@{
+    var propertyPath = new[] { "name" };
+    var colormapping = new List<Syncfusion.EJ2.Maps.MapsColorMapping> {
+        new  MapsColorMapping{ Color = "#EDB46F",Value= "Permanent"  },
+        new MapsColorMapping { Color= "#F1931B", Value = "Non-Permanent" }
+    };
+}
+
 <ejs-maps id="maps">
-    <e-maps-titlesettings text="USA Election Results - 2016" textStyle="titleStyle"></e-maps-titlesettings>
     <e-maps-legendsettings visible="true" position="Top"></e-maps-legendsettings>
     <e-maps-layers>
-        <e-maps-layer shapeSettings="shape" dataSource="ViewBag.electiondata" shapeData="ViewBag.usmap" shapeDataPath="State" shapePropertyPath="name">
+        <e-maps-layer dataSource="ViewBag.electiondata" shapeData="ViewBag.world" shapeDataPath="Country" shapePropertyPath="propertyPath">
+            <e-layersettings-shapesettings colorValuePath="Membership" fill="#E5E5E5" colorMapping="colormapping"></e-layersettings-shapesettings>
         </e-maps-layer>
     </e-maps-layers>
 </ejs-maps>
+
 
 ```
 
@@ -205,26 +209,13 @@ You can add data labels to show additional information of the shapes in map. Thi
 
 ```html
 
-@using Syncfusion.EJ2;
-var shape = new
-{
-    colorValuePath = "Candidate",
-    colorMapping = new[] {
-        new { value = "Trump", color = "#D84444" },
-        new { value = "Clinton", color = "#316DB5" }
-    }
-};
-var dataLabelSettings = new
-{
-        visible = true,
-        labelPath = "name",
-        smartLabelMode = "Trim"
-};
+@using Syncfusion.EJ2.Maps;
+
 <ejs-maps id="maps">
-    <e-maps-titlesettings text="USA Election Results - 2016" textStyle="titleStyle"></e-maps-titlesettings>
     <e-maps-layers>
-        <e-maps-layer dataLabelSettings="dataLabelSettings" shapeSettings="shape" dataSource="ViewBag.electiondata" shapeData="ViewBag.usmap"
-            shapeDataPath="State" shapePropertyPath="name">
+        <e-maps-layer shapeData="ViewBag.usmap">
+            <e-layersettings-datalabelsettings visible="true" labelPath="name" smartLabelMode="@Syncfusion.EJ2.Maps.SmartLabelMode.Trim"></e-layersettings-datalabelsettings>
+            <e-layersettings-shapesettings autofill="true"></e-layersettings-shapesettings>
         </e-maps-layer>
     </e-maps-layers>
 </ejs-maps>
@@ -239,14 +230,15 @@ in [`tooltipSettings`] object.
 
 ```html
 
-@using Syncfusion.EJ2;
-<ejs-maps id="maps" load="window.onMapLoad" shapeSelected="window.shapeSelected">
-    <e-maps-titlesettings text="USA Election Results - 2016" textStyle="titleStyle"></e-maps-titlesettings>
-    <e-maps-zoomsettings enable="false"></e-maps-zoomsettings>
-    <e-maps-legendsettings visible="true" mode="Interactive" position="Top" width="80%" textStyle="textStyle"></e-maps-legendsettings>
+@using Syncfusion.EJ2.Maps;
+
+<ejs-maps id="maps">
     <e-maps-layers>
-        <e-maps-layer shapeSettings="shape" dataSource="ViewBag.electiondata" shapeData="ViewBag.usmap" shapeDataPath="State" shapePropertyPath="name"
-            tooltipSettings="tooltipSettings" highlightSettings="highlightSettings" selectionSettings="selectionSettings">
+        <e-maps-layer shapeData="ViewBag.usmap">
+            <e-layersettings-datalabelsettings visible="true" labelPath="name" smartLabelMode="@Syncfusion.EJ2.Maps.SmartLabelMode.Trim">
+            </e-layersettings-datalabelsettings>
+            <e-layersettings-tooltipsettings visible="true" valuePath="name"></e-layersettings-tooltipsettings>
+            <e-layersettings-shapesettings autofill="true"></e-layersettings-shapesettings>
         </e-maps-layer>
     </e-maps-layers>
 </ejs-maps>
