@@ -36,7 +36,7 @@ The image can be exported as base64 string for the JPEG and PNG formats. The ren
 
 ### PDF Export
 
-To use the PDF export functionality, set the `AllowPdfExport` property to **true**. The rendered Maps can be exported as PDF using the `export` method. The `export`  method requires three parameters: file type, file name and orientation of the PDF document. The orientation setting is optional and "0" indicates portrait and "1" indicates landscape.
+To use the PDF export functionality, set the `AllowPdfExport` property to **true**. The rendered Maps can be exported as PDF using the `export` method. The `export`  method requires three parameters: file type, file name and orientation of the PDF document. The orientation setting is optional and **0** indicates portrait and **1** indicates landscape.
 
 {% aspTab template="maps/print-export/exportPdf", sourceFiles="export.cs" %}
 
