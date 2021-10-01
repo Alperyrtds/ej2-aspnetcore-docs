@@ -48,3 +48,13 @@ In the following sample, we have invoked the [`hideScroll`](https://ej2.syncfusi
 {% aspTab template="grid/scrolling/hide-scroll", sourceFiles="hide-scroll.cs" %}
 
 {% endaspTab %}
+
+## Sticky Header
+
+You can make the Grid column headers remain fixed while scrolling by using the [`enableStickyHeader`](https://ej2.syncfusion.com/javascript/documentation/api/grid/#enablestickyheader) property.
+
+In the below demo, the Grid headers will be sticky while scrolling the Grid's parent div element.
+
+{% aspTab template="grid/scrolling/sticky-header", sourceFiles="sticky-header.cs" %}
+
+{% endaspTab %}
