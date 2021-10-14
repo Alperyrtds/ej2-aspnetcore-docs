@@ -17,7 +17,7 @@ The steps to create an ASP.NET Core application are as follows.
 
 **Step 1:** Click **Create new project** in the **Start page** of Visual Studio 2017, and the popup window below will appear. Click the **OK** button after selecting the **ASP.NET Core Web Application** template. You can also change the name of the project.
 
-![Core template](../images/aspcore-template.png)
+![Core template](../images/core-template.PNG)
 
 **Step 2:** Following the above steps, the popup window below will appear. Select **Web Application(Model View Controller)** in this window. Now the project will be created successfully.
 
