@@ -33,3 +33,13 @@ var model= JSON.parse(model);
 window.localStorage.setItem('gridGrid', JSON.stringify(model)); //"gridGrid" is component name + component id.
 
 ```
+
+## Restore initial Grid state
+
+When the [`enablePersistence`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_EnablePersistence) property is set to **true**, the Grid will keep its state even if the page is reloaded. In some cases, you may be required to retain the Grid in its initial state. The Grid will not retain its initial state now since the [`enablePersistence`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_EnablePersistence) property has been enabled.
+
+You can achieve this by destroying the grid after disabling the [`enablePersistence`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_EnablePersistence) property and clearing the local storage data, as shown in the sample below.
+
+{% aspTab template="grid/state-persist/initial-grid", sourceFiles="initial-grid.cs" %}
+
+{% endaspTab %}
