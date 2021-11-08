@@ -5,6 +5,7 @@ component: "Bullet Chart"
 
 description: "Getting started file explains how to configure and install bullet chart packages and also how to create basic bullet chart, module injections."
 ---
+
 # Getting Started with ASP.NET Core
 
 Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your ASP.NET Core application to use our components.
@@ -21,17 +22,17 @@ The following steps to create ASP.NET Core Application.
 
 **Step 1:** Create ASP.NET Core Web Application with default template project in Visual Studio 2017.
 
-![Alt text](./images/default-template.png)
+![project selection](./images/default-template.png)
 
 **Step 2:** Once your project created. We need to add Syncfusion EJ2 package into your application by using Nugget Package Manager.
 
 Open the `nuGet` package manager.
 
-![Alt text](./images/solution-explorer-core.png)
+![nugget package install](./images/solution-explorer-core.png)
 
 Install the **Syncfusion.EJ2** package to the application
 
-![Alt text](./images/nuget-demo.png)
+![package install](./images/nuget-demo.png)
 
 After Installation complete this will included in the project. You can refer it from the Project Assembly Reference.
 
@@ -75,7 +76,7 @@ After Installation complete this will included in the project. You can refer it 
 
 ## BulletChart With Data
 
-This section explains how to plot local data to the bullet chart.
+This section explains how to plot local data to the Bullet Chart.
 
 ```javascript
 <script type="text/javascript" >
@@ -92,7 +93,7 @@ This section explains how to plot local data to the bullet chart.
 </script>
 ```
 
-Now assign the data to `dataSource` property. `value` and `target` values should be mapped with `valueName` and `targetName` respectively.
+Now assign the data to `dataSource` property. **value** and **target** values should be mapped with `valueField` and `targetField` respectively.
 
 {% aspTab template="bullet-chart/getting-started/default", sourceFiles="default.cs" %}
 

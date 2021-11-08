@@ -82,3 +82,5 @@ horizontal axis to DateTime. By default, the axis valueType is Numeric.
 {% endaspTab %}
 
 ![Alt text](./images/stockchart.png)
+
+> You can refer to our [ASP.NET Core Stock Chart](https://www.syncfusion.com/aspnet-core-ui-controls/stock-chart) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Stock Chart example](https://ej2.syncfusion.com/aspnetcore/StockChart/Default#/material) that shows you how to present and manipulate data.
