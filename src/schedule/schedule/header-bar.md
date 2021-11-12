@@ -54,4 +54,14 @@ In month view, the date header template is not applicable and therefore the same
 
 {% endaspTab %}
 
+## Customizing header indent cells
+
+It is possible to customize the header indent cells using the `headerIndentTemplate` option and change the look and appearance in both the vertical and timeline views. In vertical views, You can customize the header indent cells at the hierarchy level and you can customize the resource header left indent cell in timeline views using the template option.
+
+**Example:** To customize the header left indent cell to display resources text, refer to the below code example.
+
+{% aspTab template="schedule/header-bar/header-indent", sourceFiles="data.cs"  %}
+
+{% endaspTab %}
+
 > You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to knows how to present and manipulate data.

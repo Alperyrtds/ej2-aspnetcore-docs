@@ -38,4 +38,14 @@ The following example shows how the auto row adjustment feature works on timelin
 
 {% endaspTab %}
 
+## Appointments occupying entire cell
+
+By default, with the feature `rowAutoHeight`, there will be a space in the bottom of the cell when appointment is rendered. To avoid this space, we can set true to the property `ignoreWhitespace` with in `eventSettings` whereas its default property value is false. In the following code example, the whitespace below the appointments has been ignored.
+
+{% aspTab template="schedule/row-auto-height/ignore-whitespace", sourceFiles="data.cs"  %}
+
+{% endaspTab %}
+
+**Note**: The property `ignoreWhitespace` will be applicable only when `rowAutoHeight` feature is enabled in the Scheduler.
+
 > You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to knows how to present and manipulate data.
