@@ -21,7 +21,7 @@ The following steps are used to create ASP.NET Core application.
 
 **Step 1:** Create ASP.NET Core web application with default template project in Visual Studio 2017.
 
-![Alt text](./images/default-template.png)
+![Alt text](../images/default-template.png)
 
 **Step 2:** After creating the project, add the following dependencies to your application by using `NuGet Package Manager`.
 * Syncfusion.EJ2.AspNet.Core
@@ -29,15 +29,15 @@ The following steps are used to create ASP.NET Core application.
 
 Open the `NuGet` package manager.
 
-![Alt text](./images/solution-explorer-core.png)
+![Alt text](../images/solution-explorer-core.png)
 
 Install the **Syncfusion.EJ2.AspNet.Core** package to the application.
 
-![Alt text](./images/nuget_ej2_core.png)
+![Alt text](../images/nuget_ej2_core.png)
 
 Install the **Syncfusion.EJ2.PdfViewer.AspNet.Core.Windows** package to the application.
 
-![Alt text](./images/nuget_ej2_pdfviewer_core.png)
+![Alt text](../images/nuget_ej2_pdfviewer_core.png)
 
 >For Linux and OSX operating systems use the corresponding libraries as below,
 * Syncfusion.EJ2.PdfViewer.AspNet.Core.Linux
@@ -71,7 +71,10 @@ Install the **Syncfusion.EJ2.PdfViewer.AspNet.Core.Windows** package to the appl
 </body>
 ```
 
-**Step 6:** Add the following code to the Index.cshtml view page, which is presented under Views/Home folder, to initialize PDF Viewer.
+**Step 6:** Add the following code to the `Index.cshtml` view page, which is presented under `Views/Home` folder, to initialize PDF Viewer.
 
 {% aspTab template="pdfviewer/getting-start-core", sourceFiles="PdfViewerController.cs" %}
 {% endaspTab %}
+Download the Getting started sample from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/EJ2CoreSample1859131299.zip)
+
+> You can refer to our [ASP.NET Core PDF Viewer](https://www.syncfusion.com/aspnet-core-ui-controls/pdf-viewer) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core PDF Viewer example](https://ej2.syncfusion.com/aspnetcore/PdfViewer/Default#/material) to understand how to explains core features of PDF Viewer.
