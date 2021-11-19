@@ -455,3 +455,4 @@ To render boolean values as checkbox in columns, you need to set [`displayAsChec
 * [How to Perform aggregation in Foreign Key Column](./how-to/perform-aggregation-in-foreign-key-column)
 * [How to set complex column as Foreignkey column](./how-to/complex-column-as-foreign-key-column)
 * [Complex Data Binding with list of Array Of Objects](./how-to/list-of-array-of-objects)
+* [How to display image on the base64 Grid column](https://www.syncfusion.com/kb/11513/how-to-display-image-on-the-base64-grid-column)

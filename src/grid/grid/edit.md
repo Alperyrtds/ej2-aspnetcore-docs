@@ -448,3 +448,4 @@ If **primaryKey** is not defined in the grid, then edit or delete action take pl
 * [Wizard Like Editing](./how-to/use-wizard-like-dialog-editing)
 * [Tab Inside the Dialog Template](./how-to/using-tab-inside-the-dialog-editing)
 * [Restrict to type decimal points in a NumericTextBox while editing the numeric column](./how-to/restrict-decimal-points-while-grid-editing)
+* [How to set custom format in edit state of Grid](https://www.syncfusion.com/kb/11319/how-to-set-custom-format-in-edit-state-of-grid)
