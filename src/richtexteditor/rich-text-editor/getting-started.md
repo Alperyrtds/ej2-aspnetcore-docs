@@ -80,6 +80,8 @@ The final output will be displayed as follows
 
 {% endaspTab %}
 
+> You can refer to our [ASP.NET Core Rich Text Editor](https://www.syncfusion.com/aspnet-core-ui-controls/wysiwyg-rich-text-editor) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Rich Text Editor example](https://ej2.syncfusion.com/aspnetcore/RichTextEditor/DefaultFunctionalities#/material) that shows how to render the rich text editor tools.
+
 ## See Also
 
 * [How to change the editor type](./formation/)

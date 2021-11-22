@@ -35,6 +35,7 @@ You can use the following key shortcuts when the Rich Text Editor renders with H
 | Outdents| <kbd>`ctrl`</kbd> + <kbd>`[`</kbd> |
 | HTML source | <kbd>`ctrl`</kbd> + <kbd>`shift`</kbd> + <kbd>`h`</kbd> |
 | Fullscreen| <kbd>`ctrl`</kbd> + <kbd>`shift`</kbd> + <kbd>`f`</kbd> |
+| Exit Fullscreen| <kbd>`Esc`</kbd> |
 | Decrease font size| <kbd>`ctrl`</kbd> + <kbd>`shift`</kbd> + <kbd>`<`</kbd> |
 | Decrease font size| <kbd>`ctrl`</kbd> + <kbd>`shift`</kbd> + <kbd>`>`</kbd> |
 | Justify center| <kbd>`ctrl`</kbd> + <kbd>`e`</kbd> |
